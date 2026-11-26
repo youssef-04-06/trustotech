@@ -1,0 +1,274 @@
+/* --- GLOBAL --- */
+:root {
+    --brand-blue: #00d2ff;
+    --dark-bg: #050a14;
+    --card-bg: #0d1425;
+}
+.nav-pro {
+    background: linear-gradient(135deg, #0f172a, #0b1120);
+    padding: 20px 0;
+    transition: 0.4s ease;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    z-index: 9999;
+}
+
+/* SCROLL EFFECT */
+.nav-pro.scrolled {
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    padding: 14px 0;
+}
+
+/* LOGO */
+.logo {
+    height: 55px;
+}
+
+.brand-text {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+/* NAV LINKS */
+.nav-link {
+    color: #cbd5e1 !important;
+    font-weight: 500;
+    margin: 0 16px;
+    position: relative;
+    transition: 0.4s;
+}
+
+/* Neon underline */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #00f5ff, #0d6efd);
+    box-shadow: 0 0 12px #00f5ff;
+    transition: 0.4s;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* CTA BUTTON */
+.cta-btn {
+    background: linear-gradient(135deg, #00f5ff, #0d6efd);
+    padding: 10px 26px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s ease;
+    box-shadow: 0 0 20px rgba(0, 245, 255, 0.5);
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 35px rgba(0, 245, 255, 0.9);
+}
+
+body.partner-page {
+    background: var(--dark-bg);
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+.text-blue {
+    color: var(--brand-blue);
+}
+
+.bg-darker {
+    background: #030712;
+}
+
+/* --- HERO --- */
+.partner-hero {
+    padding: 180px 0 100px;
+    background: linear-gradient(180deg, rgba(0, 210, 255, 0.1) 0%, transparent 100%);
+}
+
+.main-title {
+    font-weight: 900;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero-desc {
+    color: #94a3b8;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* --- SECTIONS PADDING (THE FIX FOR "MESS") --- */
+.partner-split-section, .expect-section, .assessment-block {
+    padding: 120px 0;
+}
+
+/* --- WHY JOIN US ITEMS --- */
+.why-item {
+    margin-bottom: 40px;
+}
+
+    .why-item h4 {
+        font-weight: 700;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+        .why-item h4 i {
+            color: var(--brand-blue);
+            font-size: 1.2rem;
+        }
+
+    .why-item p {
+        color: #94a3b8;
+        padding-left: 35px;
+    }
+
+/* --- SIDE FORM --- */
+.side-form-card {
+    background: var(--card-bg);
+    border: 1px solid #1f2937;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.minimal-input {
+    width: 100%;
+    background: #050a14;
+    border: 1px solid #1f2937;
+    padding: 12px;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.btn-blue-sm {
+    background: var(--brand-blue);
+    border: none;
+    padding: 12px;
+    font-weight: 800;
+    border-radius: 8px;
+}
+
+/* --- EXPECT SECTIONS --- */
+.lead-text {
+    font-size: 1.25rem;
+    color: #94a3b8;
+    line-height: 1.8;
+}
+
+.section-heading {
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+/* --- LARGE ASSESSMENT FORM --- */
+.form-wrapper-large {
+    background: var(--card-bg);
+    padding: 60px;
+    border-radius: 30px;
+    border: 1px solid #1f2937;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form-label-blue {
+    color: var(--brand-blue);
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.main-input {
+    width: 100%;
+    background: #050a14;
+    border: 1px solid #374151;
+    padding: 15px;
+    color: white;
+    border-radius: 12px;
+}
+
+.apply-btn {
+    background: var(--brand-blue);
+    color: black;
+    font-weight: 900;
+    padding: 20px 60px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.3s;
+}
+
+    .apply-btn:hover {
+        box-shadow: 0 0 30px var(--brand-blue);
+        background: white;
+    }
+
+
+/* SCROLL EFFECT */
+.nav-pro.scrolled {
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    padding: 14px 0;
+}
+
+/* LOGO */
+.logo {
+    height: 55px;
+}
+
+.brand-text {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+/* NAV LINKS */
+.nav-link {
+    color: #cbd5e1 !important;
+    font-weight: 500;
+    margin: 0 16px;
+    position: relative;
+    transition: 0.4s;
+}
+
+/* Neon underline */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #00f5ff, #0d6efd);
+    box-shadow: 0 0 12px #00f5ff;
+    transition: 0.4s;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}

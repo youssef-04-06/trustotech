@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class PartnerRequest extends Model
+{
+    protected $table = 'partner_requests';
+
+    protected $fillable = [
+        'name',
+        'email',
+        'phone',
+        'company_name',
+        'location',
+    ];
+}

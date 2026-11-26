@@ -1,0 +1,303 @@
+/* --- FUNDAMENTAL SETTINGS --- */
+:root {
+    --brand-blue: #00d2ff;
+    --dark-body: #050a14;
+    --card-bg: #0d1425;
+}
+
+body.contact-layout {
+    background: var(--dark-body);
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+/* --- THE NAVBAR FIX --- */
+.nav-pro {
+    background: linear-gradient(135deg, #0f172a, #0b1120);
+    padding: 20px 0;
+    transition: 0.4s ease;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    z-index: 9999;
+}
+
+/* SCROLL EFFECT */
+.nav-pro.scrolled {
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    padding: 14px 0;
+}
+
+/* LOGO */
+.logo {
+    height: 55px;
+}
+
+.brand-text {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+/* NAV LINKS */
+.nav-link {
+    color: #cbd5e1 !important;
+    font-weight: 500;
+    margin: 0 16px;
+    position: relative;
+    transition: 0.4s;
+}
+
+/* Neon underline */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #00f5ff, #0d6efd);
+    box-shadow: 0 0 12px #00f5ff;
+    transition: 0.4s;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* CTA BUTTON */
+.cta-btn {
+    background: linear-gradient(135deg, #00f5ff, #0d6efd);
+    padding: 10px 26px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s ease;
+    box-shadow: 0 0 20px rgba(0, 245, 255, 0.5);
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 35px rgba(0, 245, 255, 0.9);
+}
+/* --- PROFESSIONAL FORM --- */
+.form-card-modern {
+    background: var(--card-bg);
+    padding: 50px;
+    border-radius: 30px;
+    border: 1px solid #1f2937;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.custom-input-group {
+    margin-bottom: 25px;
+}
+
+    .custom-input-group label {
+        display: block;
+        color: var(--brand-blue);
+        font-weight: 800;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+
+    .custom-input-group input, .custom-input-group textarea {
+        width: 100%;
+        background: #050a14;
+        border: 1px solid #374151;
+        padding: 15px;
+        color: white;
+        border-radius: 12px;
+        outline: none;
+    }
+
+        .custom-input-group input:focus {
+            border-color: var(--brand-blue);
+        }
+
+.send-btn {
+    width: 100%;
+    background: var(--brand-blue);
+    border: none;
+    padding: 18px;
+    font-weight: 900;
+    border-radius: 12px;
+    color: black;
+    transition: 0.3s;
+}
+
+    .send-btn:hover {
+        background: white;
+        box-shadow: 0 0 20px var(--brand-blue);
+    }
+
+/* --- SOCIALS --- */
+.social-box-modern {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    background: #1f2937;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+    .social-btn:hover {
+        background: var(--brand-blue);
+        color: black;
+        transform: scale(1.1);
+    }
+
+/* --- FLAG CARDS --- */
+.flag-node {
+    background: var(--card-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #1f2937;
+}
+
+.flag-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.flag-info {
+    padding: 25px;
+}
+
+    .flag-info h5 {
+        font-weight: 800;
+    }
+
+    .flag-info p {
+        color: var(--brand-blue);
+        margin-bottom: 0;
+    }
+/* --- FOOTER --- */
+.footer-advanced {
+    background: var(--bg-main);
+    padding: 80px 0 30px;
+    border-top: 1px solid rgba(193, 155, 118, 0.2);
+}
+
+.footer-logo {
+    height: 45px;
+    filter: brightness(1.1);
+}
+
+.footer-heading {
+    color: dodgerblue;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.footer-heading::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: white;
+    margin-top: 8px;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    margin-bottom: 12px;
+}
+
+.footer-nav a,
+.footer-nav p {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.footer-nav a:hover {
+    color: #c19b76;
+    padding-left: 8px;
+}
+
+.social-links a {
+    color: dodgerblue;
+    font-size: 1.3rem;
+    margin-right: 20px;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.newsletter-box {
+    position: relative;
+    display: flex;
+    margin-top: 15px;
+}
+
+.newsletter-box input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(193, 155, 118, 0.3);
+    border-radius: 4px;
+    padding: 12px 20px;
+    color: white;
+    outline: none;
+    font-size: 0.85rem;
+}
+
+.newsletter-box input:focus {
+    border-color: #c19b76;
+}
+
+.newsletter-box button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #c19b76;
+    border: none;
+    color: white;
+    width: 46px;
+    height: 100%;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.newsletter-box button:hover {
+    background: #a88562;
+}
+
+.footer-bottom p {
+    color: #666;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
